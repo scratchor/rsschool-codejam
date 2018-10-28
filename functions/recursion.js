@@ -1,6 +1,6 @@
 module.exports = function recursion(node) {
   const arr = [];
-  const newArr = [];  
+  const newArr = [];
   function passTheTree(node) {
     if (node == null) return;
     passTheTree(node.left);
@@ -24,4 +24,4 @@ module.exports = function recursion(node) {
   }
   makeArr2(arr, 0, 0);
   return newArr;
-}
+};
