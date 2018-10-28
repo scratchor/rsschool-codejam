@@ -1,9 +1,9 @@
-module.exports = function make() {
+module.exports = function make(...rest) {
   const arr = [];
-  const args = [].slice.call(arguments);
+  const args = rest;
   args.forEach(i => arr.push(i));
-  function make2() {
-    const arg = [].slice.call(arguments);
+  function make2(...other) {
+    const arg = other;
     if (typeof (arg[0]) === 'function') {
       return arr.reduce(arg[0]);
     }

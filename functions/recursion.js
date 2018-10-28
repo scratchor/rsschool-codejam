@@ -22,6 +22,6 @@ module.exports = function recursion(node) {
     makeArr2(arr1, ++n);
     makeArr2(arr2, n);
   }
-  makeArr2(arr, 0, 0);
+  makeArr2(arr, 0);
   return newArr;
 };
